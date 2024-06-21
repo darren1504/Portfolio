@@ -1,0 +1,100 @@
+doctype html 
+html(lang="ja")
+  head 
+    include _html_header
+    title Darren's Portfolio 
+    link(rel="stylesheet", href="css/index.css")
+  body 
+    include _html_footer
+    header 
+      nav 
+        ul.navWrap 
+          li.navItem: a(href="#home") Home 
+          li.navItem: a(href="#about") About 
+          li.navItem: a(href="#skills") Skills 
+          li.navItem: a(href="#works") Works 
+          li.navItem: a(href="#contact") Contact 
+    main 
+      .mainWrap 
+        .topWrap#home 
+          h1 Darren Dev 
+          p.engVer Web Designer & Front-End Engineer 
+          p.jpVer Webデザイナー & フロントエンドエンジニア
+          .scrollWrap 
+            .mouse
+              .scroller 
+        .welcomeWrap 
+          h2 Welcome! 
+          p.welJp ようこそ！
+          p.welProfile 僕のポートフォリサイトへようこそ！
+          p.welExp 今までに制作した作品、身につけたスキルや技術、少し自分のことでもまとめて書いてあるポートフォリオサイトです。
+        .aboutWrap#about 
+          h2 About Me 
+          .about_flex 
+            //- 自分の写真を載せる
+            figure.myPic 
+              img(src="img/me.jpg", alt="")
+            .introduction 
+              h3 だれん
+              p.intro_sub 
+                | ECCコンピュータ専門学校 Webデザインコースの25年度卒業予定
+                br
+                | インドネシア出身で、日本に留学したきっかけが元々IT業界に入りたくて、Webサイトを作りたいことでした。
+                | 現在、ECCコンピュータ専門学校に入学しており、日々勉強と学びでいっぱいです！Webデザイナーとフロントエンドエンジニアを志望職種として目指しています。
+                | 一人暮らしなので、アルバイトもしています！アニメ、日本文化、食べ物、とにかく色々日本のことが大好きで、日本の色んなところに旅行しようと思っています！
+              h3.hobbies 趣味
+              p.hobbies_content アニメ・ゲーム・YouTube・音楽(特にJ-Pop)・映画
+        .skillWrap#skills 
+          h2 My Skills 
+          p.intro_skill 
+            | 自分が今まで習っていたスキルや技術をここにまとめました。
+            | 学校からの勉強と学び、先輩からの教え、そして自分で調べて独学した知識。
+            | 知らないこともまだ多くて、まだまだ未熟な自分なので、これからもたくさんスキルを得て、いっぱい作品を作りたいと思います。
+          .skill_innerWrap 
+            .skill_itemWrap 
+              p.skill_item.html_item HTML 4/5
+              p.skill_item.css_item CSS 4/5
+              p.skill_item.sass_item SASS 4/5
+              p.skill_item.js_item Javascript 3/5
+              p.skill_item.react_item React 2/5
+              p.skill_item.reactNative_item React Native 2/5
+              p.skill_item.php_item PHP 2/5
+            ul.rating 
+              li.rate_item 1 - 不安
+              li.rate_item 2 - ちょっとできる
+              li.rate_item 3 - ある程度理解できる
+              li.rate_item 4 - 普通に使える
+              li.rate_item 5 - マスター
+        .worksWrap#works 
+          h2 Works 
+          .works_innerWrap 
+            .works_card 
+              figure.thumb 
+                a(href=""): img(src="img/ohsado_main_visual.jpg", alt="") 
+              p: a(href="") 御茶堂(Ohsado) - Webサイト・サービス
+            .works_card 
+              figure.thumb 
+                a(href=""): img(src="img/freshdeli_main_visual.png", alt="") 
+              p: a(href="") フレッシュデリー(Fresh Deli) - Webサイト・サービス 
+            .works_card 
+              figure.thumb 
+                a(href=""): img(src="img/cafe_stargazer_main_visual.png", alt="") 
+              p: a(href="") Cafe Stargazer - Webサイト 
+            .works_card 
+              figure.thumb 
+                a(href=""): img(src="img/osaketate_main_visual.png", alt="") 
+              p: a(href="") おさけたて - LPサイト 
+        .contactWrap#contact 
+          h2 Contact 
+          p.cont_exp もっと知りたいことがあれば、連絡していただいたら嬉しいです！
+          .infoWrapper 
+            .infoInnerWrapper 
+              figure
+                a(href=""): img(src="img/mail.png", alt="")
+              p.cont_info E-Mail 
+            .infoInnerWrapper  
+              figure
+                a(href="https://github.com/darren1504"): img(src="img/github.png", alt="")
+              p.cont_info: a(href="https://github.com/darren1504")  Github 
+    footer 
+      p &copy; 2024 Darren Dev 
