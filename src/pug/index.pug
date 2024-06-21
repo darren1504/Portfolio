@@ -60,7 +60,6 @@ html(lang="ja")
                 .content 
                   figure: img(src="img/movies.png", alt="")
                   p 映画
-                //- p.hobbies_content アニメ・ゲーム・YouTube・音楽(特にJ-Pop)・映画
         .skillWrap#skills 
           h2 My Skills 
           p.intro_skill 
@@ -69,44 +68,61 @@ html(lang="ja")
             | 知らないこともまだ多くて、まだまだ未熟な自分なので、これからもたくさんスキルを得て、いっぱい作品を作りたいと思います。
           .skill_innerWrap 
             .skill_itemWrap 
-              p.skill_item.html_item HTML 4/5
-              p.skill_item.css_item CSS 4/5
-              p.skill_item.sass_item SASS 4/5
-              p.skill_item.js_item Javascript 3/5
-              p.skill_item.react_item React 2/5
-              p.skill_item.reactNative_item React Native 2/5
-              p.skill_item.php_item PHP 2/5
+              .childWrap 
+                figure: img(src="img/html.png", alt="")
+                p.skill_item HTML 4/5
+              .childWrap 
+                figure: img(src="img/css.png", alt="")
+                p.skill_item CSS 4/5
+              .childWrap 
+                figure: img(src="img/pug.svg", alt="")
+                p.skill_item Pug 4/5
+              .childWrap 
+                figure: img(src="img/sass.png", alt="")
+                p.skill_item SASS 4/5
+              .childWrap 
+                figure: img(src="img/javascript.png", alt="")
+                p.skill_item Javascript 3/5
+              .childWrap 
+                figure: img(src="img/react.png", alt="")
+                p.skill_item React 2/5
+              .childWrap 
+                figure: img(src="img/react_native.svg", alt="")
+                p.skill_item React Native 2/5
+              .childWrap 
+                figure: img(src="img/php.png", alt="")
+                p.skill_item PHP 2/5
             ul.rating 
               li.rate_item 1 - 不安
-              li.rate_item 2 - ちょっとできる
-              li.rate_item 3 - ある程度理解できる
-              li.rate_item 4 - 普通に使える
+              li.rate_item 2 - 少しできます
+              li.rate_item 3 - ある程度理解しています
+              li.rate_item 4 - 自信あります
               li.rate_item 5 - マスター
         .worksWrap#works 
           h2 Works 
           .works_innerWrap 
             .works_card 
               figure.thumb 
-                a(href=""): img(src="img/ohsado_main_visual.jpg", alt="") 
-              p: a(href="") 御茶堂(Ohsado) - Webサイト・サービス
+                a(href="https://click.ecc.ac.jp/ecc/darren/Ohsado/public/"): img(src="img/ohsado_main_visual.jpg", alt="") 
+              p: a(href="https://click.ecc.ac.jp/ecc/darren/Ohsado/public/") 御茶堂(Ohsado) - Webサイト・サービス
               p.exp 
                 | 御茶堂は留学生や外国の方を対象に母国語で茶道を学び、お茶のことと和菓子作りの魅力を味わえるサイトです。
             .works_card 
               figure.thumb 
-                a(href=""): img(src="img/freshdeli_main_visual.png", alt="") 
-              p: a(href="") フレッシュデリー(Fresh Deli) - Webサイト・サービス 
+                a(href="https://click.ecc.ac.jp/ecc/darren/Fresh%20Deli/public/"): img(src="img/freshdeli_main_visual.png", alt="") 
+              p: a(href="https://click.ecc.ac.jp/ecc/darren/Fresh%20Deli/public/") フレッシュデリー(Fresh Deli) - Webサイト・サービス 
               p.exp 
                 | Fresh Deliは健康的なデザートを販売しているサイトです。ダイエット中にご褒美としてたまに甘いものを食べたいという方向けにこのサービスを作りました。
             .works_card 
               figure.thumb 
-                a(href=""): img(src="img/cafe_stargazer_main_visual.png", alt="") 
-              p: a(href="") Cafe Stargazer - Webサイト 
+                a(href="https://click.ecc.ac.jp/ecc/darren/Cafe%20Stargazer/"): img(src="img/cafe_stargazer_main_visual.png", alt="") 
+              p: a(href="https://click.ecc.ac.jp/ecc/darren/Cafe%20Stargazer/") Cafe Stargazer - Webサイト 
               p.exp
                 | Cafe Stargazerは夜の星空をコンセプトにしたカフェです。星座や宇宙に興味がある方をターゲットにし、メニュー全体のデザインや名前を「星」テーマにしました。
             .works_card 
               figure.thumb 
-                a(href=""): img(src="img/osaketate_main_visual.png", alt="") 
-              p: a(href="") おさけたて - LPサイト 
+                a(href="https://click.ecc.ac.jp/ecc/darren/osaketate/"): img(src="img/osaketate_main_visual.png", alt="") 
+              p: a(href="https://click.ecc.ac.jp/ecc/darren/osaketate/") おさけたて - LPサイト 
               p.exp 
                 | おさけたてはお酒の初心者向けにサービスを提供しております。こちらがLPサイトとなっています。
         .contactWrap#contact 
