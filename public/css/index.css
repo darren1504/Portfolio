@@ -487,6 +487,7 @@ main .mainWrap .aboutWrap .about_flex {
   justify-content: center;
   align-items: center;
   gap: 64px;
+  margin-top: 48px;
   width: 100%;
   height: 300px;
 }
@@ -516,8 +517,29 @@ main .mainWrap .aboutWrap .introduction .hobbies {
   margin-top: 16px;
 }
 main .mainWrap .aboutWrap .introduction .hobbies_content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 16px;
+}
+main .mainWrap .aboutWrap .introduction .hobbies_content .content {
+  width: 100%;
+  height: 120px;
+}
+main .mainWrap .aboutWrap .introduction .hobbies_content .content figure {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto;
+}
+main .mainWrap .aboutWrap .introduction .hobbies_content .content figure img {
+  width: 100%;
+  height: 100%;
+}
+main .mainWrap .aboutWrap .introduction .hobbies_content .content p {
+  margin-top: 16px;
+  text-align: center;
   font-size: 1.4rem;
-  margin-top: 8px;
+  font-weight: bold;
 }
 main .mainWrap .skillWrap {
   display: flex;
@@ -611,6 +633,9 @@ main .mainWrap .worksWrap .works_innerWrap .works_card p a {
   height: 100%;
   color: #000;
   font-weight: bold;
+}
+main .mainWrap .worksWrap .works_innerWrap .works_card .exp {
+  font-size: 1.2rem;
 }
 main .mainWrap .contactWrap {
   display: flex;
